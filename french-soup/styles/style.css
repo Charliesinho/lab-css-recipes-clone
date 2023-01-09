@@ -1,9 +1,123 @@
-/*Some necessary adjustments*/
-h1, body, html, main {
+
+  
+
+body {
   margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
 }
-/*Import the font and set the default size*/
-html {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px
+
+#header {
+  height: 400px;
+  background-image: url(../images/soup.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;   
+  background-position-y: center;
+ 
+  
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
+
+#header h3 {
+  padding-bottom: 20px;
+}
+
+.title {
+ color: white;
+ font-size: 50px;
+ font-weight: 50;   
+ letter-spacing: 2px;
+}
+
+#section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 45px;
+}
+
+#section1 p {
+  text-align: justify;
+  font-size: 17.5px;
+}
+
+.instructionsImg {
+  width: 300px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+hr {
+  width: 80%;
+}
+
+#list {
+  
+  padding-top: 20px;
+  
+
+
+}
+
+#list > ul {
+  list-style: none;
+  padding-left: 10%;
+  line-height: 23px; 
+  
+  
+}
+
+#list > ul > li {
+  padding-left: 15px;
+}
+
+#list > ul > li::before {
+  content: "- ";
+  
+}
+
+#list > img {
+  width: 300px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: block;
+  
+  margin: auto;
+  margin-left: ;
+}
+
+#directions {
+  display: block;
+  margin: auto;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 75px;
+  padding-right: 60px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+#directions > ol {
+  padding-top: 1%;
+  list-style: none;
+  
+}
+
+#directions > ol > li {
+  counter-increment: listcounter;
+  margin-left: -25px;
+  line-height: 20px; 
+}
+
+#directions > ol > li::before {
+  content: counter(listcounter) ") ";
+}
+
+
